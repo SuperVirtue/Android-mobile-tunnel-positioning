@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.canvasdemo_02"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <com.example.canvasdemo_02.PaintTools.PinView
+        android:id="@+id/paint_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-284dp" />
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        app2:layout_constraintBottom_toBottomOf="@+id/paint_board"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.98"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <TextView
+        android:id="@+id/forecast_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forecast:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="625dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
